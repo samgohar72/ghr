@@ -10,6 +10,11 @@ export default function ManagementHome() {
       <section className="bg-brand-black py-32 md:py-48">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl">
+            <img 
+              src="https://customer-assets.emergentagent.com/job_ghr-multi-brand/artifacts/i6qc2usn_GHR%20MANAGEMENT.png"
+              alt="GHR Management"
+              className="w-64 md:w-80 mb-12"
+            />
             <h1 className="text-5xl md:text-7xl font-bold text-brand-white mb-6">
               Stress-Free Property Management.
             </h1>

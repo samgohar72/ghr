@@ -10,6 +10,11 @@ export default function ConstructionHome() {
       <section className="bg-brand-black py-32 md:py-48">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl">
+            <img 
+              src="https://customer-assets.emergentagent.com/job_ghr-multi-brand/artifacts/x6bpe3wi_GHR%20CONS.png"
+              alt="GHR Construction"
+              className="w-64 md:w-80 mb-12"
+            />
             <h1 className="text-5xl md:text-7xl font-bold text-brand-white mb-6">
               Built to Last.
               <br />

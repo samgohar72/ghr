@@ -36,7 +36,6 @@ export default function Navigation() {
         { href: '/equities', label: 'Home' },
         { href: '/equities/criteria', label: 'Criteria' },
         { href: '/equities/submit', label: 'Submit a Deal' },
-        { href: '/equities/about', label: 'About' },
         { href: '/equities/contact', label: 'Contact' },
       ]
     }
