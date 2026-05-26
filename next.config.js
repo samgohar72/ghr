@@ -1,13 +1,13 @@
 const nextConfig = {
+  output: 'export',
   images: {
     unoptimized: true,
   },
+  trailingSlash: true,
   typescript: {
-    // Ignore TypeScript build errors for deployment
     ignoreBuildErrors: true,
   },
   eslint: {
-    // Don't run linting during build
     ignoreDuringBuilds: true,
   },
 };
