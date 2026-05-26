@@ -69,32 +69,12 @@
    - **Build Command**: Leave as `next build`
    - **Output Directory**: Leave as `.next`
 
-5. **Environment Variables** (Important!)
-   - Click "Environment Variables"
-   - Add these variables:
-
-   ```
-   Name: RESEND_API_KEY
-   Value: re_EbYQEg8o_9N3xiy5kqVvjuKDpSFZbeBCb
-
-   Name: RESEND_FROM_EMAIL
-   Value: onboarding@resend.dev
-
-   Name: CONTACT_RECIPIENT_EMAIL
-   Value: ghrventuresinquiries@gmail.com
-
-   Name: MONGO_URL
-   Value: mongodb://localhost:27017/ghr-ventures
-   ```
-
-   **Note**: The MongoDB URL won't work (no database needed for your site), but we include it to prevent build errors.
-
-6. **Deploy**
+5. **Deploy**
    - Click "Deploy"
    - Wait 2-5 minutes while Vercel builds your site
    - You'll see a success screen with confetti! 🎉
 
-7. **Get Your Vercel URL**
+6. **Get Your Vercel URL**
    - You'll get a URL like: `ghr-ventures.vercel.app`
    - Click "Visit" to see your live site!
    - Test all pages to make sure everything works
@@ -137,7 +117,7 @@
    - Click "Import"
 
 4. **Configure & Deploy**
-   - Follow steps 4-7 from Method A above
+   - Follow steps 4-6 from Method A above
 
 ---
 
