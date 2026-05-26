@@ -104,30 +104,6 @@ export default function EquitiesPortfolio() {
           </div>
         </div>
       </section>
-
-      <section className="bg-brand-black py-20 md:py-32">
-        <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-bold text-brand-white mb-12 text-center">
-              Portfolio Performance
-            </h2>
-            <div className="grid md:grid-cols-3 gap-12">
-              <div className="text-center">
-                <div className="text-5xl font-bold text-brand-white mb-3">$45M+</div>
-                <p className="text-brand-silver">Total Assets Under Management</p>
-              </div>
-              <div className="text-center">
-                <div className="text-5xl font-bold text-brand-white mb-3">95%</div>
-                <p className="text-brand-silver">Average Portfolio Occupancy</p>
-              </div>
-              <div className="text-center">
-                <div className="text-5xl font-bold text-brand-white mb-3">15%</div>
-                <p className="text-brand-silver">Average Annualized Return</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
   )
 }

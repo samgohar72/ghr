@@ -93,29 +93,6 @@ export default function EquitiesHome() {
         </div>
       </section>
 
-      <section className="bg-brand-white py-20 md:py-32">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-12 max-w-7xl mx-auto">
-            <div className="text-center">
-              <div className="text-5xl md:text-6xl font-bold text-brand-black mb-3">$45M+</div>
-              <p className="text-brand-silver-dark font-medium">Assets Under Management</p>
-            </div>
-            <div className="text-center">
-              <div className="text-5xl md:text-6xl font-bold text-brand-black mb-3">8</div>
-              <p className="text-brand-silver-dark font-medium">Properties Owned</p>
-            </div>
-            <div className="text-center">
-              <div className="text-5xl md:text-6xl font-bold text-brand-black mb-3">200+</div>
-              <p className="text-brand-silver-dark font-medium">Units</p>
-            </div>
-            <div className="text-center">
-              <div className="text-5xl md:text-6xl font-bold text-brand-black mb-3">15%</div>
-              <p className="text-brand-silver-dark font-medium">Average IRR</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section className="bg-brand-black py-20 md:py-32">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-brand-white mb-6">

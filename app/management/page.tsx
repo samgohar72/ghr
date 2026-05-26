@@ -82,33 +82,6 @@ export default function ManagementHome() {
         </div>
       </section>
 
-      {/* Stats */}
-      <section className="bg-brand-white py-20 md:py-32">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-12 max-w-7xl mx-auto">
-            <div className="text-center">
-              <div className="text-5xl md:text-6xl font-bold text-brand-black mb-3">150+</div>
-              <p className="text-brand-silver-dark font-medium">Properties Managed</p>
-            </div>
-            <div className="text-center">
-              <div className="text-5xl md:text-6xl font-bold text-brand-black mb-3">97%</div>
-              <p className="text-brand-silver-dark font-medium">Average Occupancy</p>
-            </div>
-            <div className="text-center">
-              <div className="text-5xl md:text-6xl font-bold text-brand-black mb-3">12+</div>
-              <p className="text-brand-silver-dark font-medium">Years in Business</p>
-            </div>
-            <div className="text-center">
-              <div className="flex items-center justify-center mb-3">
-                <span className="text-5xl md:text-6xl font-bold text-brand-black">4.9</span>
-                <Star className="w-8 h-8 text-brand-black ml-2 fill-current" />
-              </div>
-              <p className="text-brand-silver-dark font-medium">Client Satisfaction</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Testimonials */}
       <section className="bg-brand-black py-20 md:py-32">
         <div className="container mx-auto px-4">
