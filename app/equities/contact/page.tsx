@@ -18,13 +18,13 @@ export default function EquitiesContact() {
       {/* Contact Information */}
       <section className="bg-brand-white py-32 md:py-48">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-16">
               <div className="border-l-4 border-brand-black pl-8">
                 <h2 className="text-sm font-medium text-brand-silver-dark mb-2">Phone</h2>
                 <a 
                   href="tel:7327403742" 
-                  className="text-4xl md:text-5xl font-bold text-brand-black hover:text-brand-silver-dark transition-colors"
+                  className="text-3xl md:text-4xl font-bold text-brand-black hover:text-brand-silver-dark transition-colors whitespace-nowrap"
                 >
                   (732) 740-3742
                 </a>
@@ -33,7 +33,7 @@ export default function EquitiesContact() {
                 <h2 className="text-sm font-medium text-brand-silver-dark mb-2">Email</h2>
                 <a 
                   href="mailto:sam@ghrgrp.com" 
-                  className="text-4xl md:text-5xl font-bold text-brand-black hover:text-brand-silver-dark transition-colors break-all"
+                  className="text-3xl md:text-4xl font-bold text-brand-black hover:text-brand-silver-dark transition-colors whitespace-nowrap"
                 >
                   sam@ghrgrp.com
                 </a>
