@@ -18,7 +18,6 @@ export default function Navigation() {
       return [
         { href: '/construction', label: 'Home' },
         { href: '/construction/services', label: 'Services' },
-        { href: '/construction/projects', label: 'Projects' },
         { href: '/construction/about', label: 'About' },
         { href: '/construction/contact', label: 'Contact & Inquiries' },
       ]
@@ -37,7 +36,6 @@ export default function Navigation() {
         { href: '/equities', label: 'Home' },
         { href: '/equities/criteria', label: 'Criteria' },
         { href: '/equities/submit', label: 'Submit a Deal' },
-        { href: '/equities/portfolio', label: 'Portfolio' },
         { href: '/equities/about', label: 'About' },
         { href: '/equities/contact', label: 'Contact' },
       ]

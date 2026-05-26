@@ -84,46 +84,6 @@ export default function ConstructionHome() {
         </div>
       </section>
 
-      {/* Projects Showcase */}
-      <section className="bg-brand-white py-20 md:py-32">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-brand-black mb-16 text-center">
-            Recent Projects
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto mb-12">
-            {[
-              { name: 'Modern Family Home', location: 'Edison, NJ', type: 'Residential' },
-              { name: 'Office Complex', location: 'New Brunswick, NJ', type: 'Commercial' },
-              { name: 'Kitchen Renovation', location: 'Woodbridge, NJ', type: 'Renovation' },
-            ].map((project, idx) => (
-              <div key={idx} className="border border-brand-silver-light">
-                <img
-                  src={`https://placehold.co/800x500/0A0A0A/FFFFFF`}
-                  alt={project.name}
-                  className="w-full h-64 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-brand-black mb-2">{project.name}</h3>
-                  <p className="text-brand-silver-dark mb-2">{project.location}</p>
-                  <span className="inline-block px-3 py-1 border border-brand-silver-light text-brand-silver-dark text-sm">
-                    {project.type}
-                  </span>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="text-center">
-            <Link
-              href="/construction/projects"
-              className="inline-flex items-center text-brand-black font-medium hover:text-brand-silver-dark transition-colors"
-            >
-              <span className="mr-2">View All Projects</span>
-              <ArrowRight className="w-5 h-5" />
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* Bottom CTA */}
       <section className="bg-brand-black py-20 md:py-32">
         <div className="container mx-auto px-4 text-center">

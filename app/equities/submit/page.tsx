@@ -23,10 +23,53 @@ export default function EquitiesSubmit() {
   })
 
   const [submitted, setSubmitted] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [error, setError] = useState<string | null>(null)
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    setSubmitted(true)
+    setIsSubmitting(true)
+    setError(null)
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          type: 'equities-deal',
+          name: formData.fullName,
+          email: formData.email,
+          phone: formData.phone,
+          company: formData.company,
+          propertyAddress: formData.propertyAddress,
+          assetType: formData.assetType,
+          units: formData.units,
+          yearBuilt: formData.yearBuilt,
+          occupancy: formData.occupancy,
+          askingPrice: formData.askingPrice,
+          noi: formData.noi,
+          capRate: formData.capRate,
+          loanInPlace: formData.loanInPlace,
+          message: formData.description,
+        }),
+      })
+
+      const result = await response.json()
+
+      if (!response.ok) {
+        setError(result.message || 'Something went wrong. Please try again.')
+        return
+      }
+
+      setSubmitted(true)
+    } catch (err) {
+      console.error('Error submitting form:', err)
+      setError('Failed to send your submission. Please try again or contact us directly at sam@ghrgrp.com')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -348,12 +391,20 @@ export default function EquitiesSubmit() {
                 </label>
               </div>
 
+              {/* Error Message */}
+              {error && (
+                <div className="p-4 border border-red-300 bg-red-50 text-red-800 rounded-sm">
+                  {error}
+                </div>
+              )}
+
               {/* Submit Button */}
               <button
                 type="submit"
-                className="w-full px-8 py-4 bg-brand-black text-brand-white font-medium hover:bg-brand-silver-dark transition-colors"
+                disabled={isSubmitting}
+                className="w-full px-8 py-4 bg-brand-black text-brand-white font-medium hover:bg-brand-silver-dark transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Submit Deal
+                {isSubmitting ? 'Submitting...' : 'Submit Deal'}
               </button>
             </form>
 

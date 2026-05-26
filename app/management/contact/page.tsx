@@ -14,10 +14,45 @@ export default function ManagementContact() {
   })
 
   const [submitted, setSubmitted] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [error, setError] = useState<string | null>(null)
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    setSubmitted(true)
+    setIsSubmitting(true)
+    setError(null)
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          type: 'management',
+          name: formData.fullName,
+          email: formData.email,
+          phone: formData.phone,
+          propertyAddress: formData.propertyAddress,
+          units: formData.units,
+          message: formData.message,
+        }),
+      })
+
+      const result = await response.json()
+
+      if (!response.ok) {
+        setError(result.message || 'Something went wrong. Please try again.')
+        return
+      }
+
+      setSubmitted(true)
+    } catch (err) {
+      console.error('Error submitting form:', err)
+      setError('Failed to send your message. Please try again or contact us directly at sam@ghrgrp.com')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -157,11 +192,19 @@ export default function ManagementContact() {
                   />
                 </div>
 
+                {/* Error Message */}
+                {error && (
+                  <div className="p-4 border border-red-300 bg-red-50 text-red-800 rounded-sm">
+                    {error}
+                  </div>
+                )}
+
                 <button
                   type="submit"
-                  className="w-full px-8 py-4 bg-brand-black text-brand-white font-medium hover:bg-brand-silver-dark transition-colors"
+                  disabled={isSubmitting}
+                  className="w-full px-8 py-4 bg-brand-black text-brand-white font-medium hover:bg-brand-silver-dark transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  Submit Request
+                  {isSubmitting ? 'Sending...' : 'Submit Request'}
                 </button>
               </form>
             </div>
