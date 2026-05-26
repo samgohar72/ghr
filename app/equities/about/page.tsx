@@ -47,14 +47,14 @@ export default function EquitiesAbout() {
           <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
             <div className="text-center">
               <img
-                src="https://placehold.co/300x300/D4D4D4/0A0A0A"
+                src="https://customer-assets.emergentagent.com/job_ghr-multi-brand/artifacts/omn4bbju_sam%20photo.jpg"
                 alt="Sam Gohar"
-                className="w-64 h-64 mx-auto mb-6"
+                className="w-64 h-64 mx-auto mb-6 object-cover"
               />
               <h3 className="text-2xl font-bold text-brand-white mb-2">Sam Gohar</h3>
               <p className="text-brand-silver mb-4">Founder & Managing Partner</p>
               <p className="text-brand-silver-dark leading-relaxed">
-                With over 15 years of experience in real estate investment and development, Sam leads GHR Equities' acquisition strategy and portfolio management.
+                With years of experience in real estate investment and development, Sam leads GHR Equities' acquisition strategy and portfolio management.
               </p>
             </div>
             <div className="text-center">

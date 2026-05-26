@@ -48,14 +48,14 @@ export default function ConstructionAbout() {
           <div className="max-w-md mx-auto">
             <div className="text-center">
               <img
-                src="https://placehold.co/300x300/D4D4D4/0A0A0A"
+                src="https://customer-assets.emergentagent.com/job_ghr-multi-brand/artifacts/omn4bbju_sam%20photo.jpg"
                 alt="Sam Gohar"
                 className="w-full mb-6"
               />
               <h3 className="text-2xl font-bold text-brand-white mb-2">Sam Gohar</h3>
               <p className="text-brand-silver mb-4">Founder & President</p>
               <p className="text-brand-silver-dark leading-relaxed">
-                With over 20 years of experience in residential and commercial construction, Sam leads GHR Construction with a focus on quality, integrity, and client satisfaction.
+                With years of experience in residential and commercial construction, Sam leads GHR Construction with a focus on quality, integrity, and client satisfaction.
               </p>
             </div>
           </div>
