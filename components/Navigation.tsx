@@ -49,8 +49,16 @@ export default function Navigation() {
       <nav className="sticky top-0 z-50 bg-brand-black border-b border-brand-silver-light">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
-            <Link href="/" className="text-brand-white font-bold text-xl">
-              {isConstruction || isManagement || isEquities ? '← GHR' : 'GHR Ventures'}
+            <Link href="/" className="text-brand-white font-bold text-xl flex items-center">
+              {isConstruction || isManagement || isEquities ? (
+                '← GHR'
+              ) : (
+                <img 
+                  src="/ghr-ventures-logo.png" 
+                  alt="GHR Ventures" 
+                  className="h-10"
+                />
+              )}
             </Link>
             
             {navLinks.length > 0 && (

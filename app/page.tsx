@@ -9,9 +9,11 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="h-screen flex items-center justify-center bg-brand-black">
         <div className="text-center px-4">
-          <h1 className="text-[100px] md:text-[120px] font-bold text-brand-white mb-6">
-            GHR Ventures
-          </h1>
+          <img 
+            src="/ghr-ventures-logo.png"
+            alt="GHR Ventures"
+            className="w-80 md:w-96 mx-auto mb-12"
+          />
           <p className="text-2xl md:text-3xl text-brand-silver">
             Building. Managing. Growing.
           </p>
