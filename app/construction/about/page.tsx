@@ -48,7 +48,7 @@ export default function ConstructionAbout() {
           <div className="max-w-md mx-auto">
             <div className="text-center">
               <img
-                src="https://customer-assets.emergentagent.com/job_ghr-multi-brand/artifacts/omn4bbju_sam%20photo.jpg"
+                src="/sam-gohar-photo.jpg"
                 alt="Sam Gohar"
                 className="w-full mb-6"
               />
